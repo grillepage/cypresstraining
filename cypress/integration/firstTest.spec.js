@@ -99,7 +99,7 @@ describe('Our first suit', () => {
                 const passwordLabelSecond = secondForm.find('[for="exampleInputPassword1"]').text()
                 expect(passwordLabelFirst).to.equal(passwordLabelSecond)
             
-                //Как переключиться обратно с jquary на cypress формат тестов
+                //Как переключиться обратно с jquery на cypress формат тестов
                 cy.wrap(secondForm)
                 .find('[for="exampleInputPassword1"]').should('contain', 'Password')
             })   
